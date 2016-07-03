@@ -12,7 +12,7 @@
   "author": "Elf-mousE",
   "license": "ISC",
   "devDependencies": {
-    "balm": "^0.4.5",
+    "balm": "^0.4.7",
     "gulp": "^3.9.1",
     "ts-loader": "^0.8.2"
   },

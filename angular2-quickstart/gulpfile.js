@@ -12,8 +12,10 @@ balm.config = {
   },
   scripts: {
     entry: {
-      'main': './app/main.ts'
+      angular: ['@angular/core', '@angular/platform-browser-dynamic'],
+      main: './app/main.ts'
     },
+    vendors: ['angular'],
     loaders: [{ test: /\.tsx?$/, loader: 'ts-loader' }],
     extensions: ['.ts', '.tsx']
   }
