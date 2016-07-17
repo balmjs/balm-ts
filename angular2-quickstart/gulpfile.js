@@ -10,6 +10,9 @@ balm.config = {
       js: 'app'
     }
   },
+  styles: {
+    ext: 'css'
+  },
   scripts: {
     entry: {
       angular: ['@angular/core', '@angular/platform-browser-dynamic'],
