@@ -32,7 +32,7 @@
     "bootstrap": "^3.3.6"
   },
   "devDependencies": {
-    "balm": "^0.4.10",
+    "balm": "^0.4.11",
     "concurrently": "^2.0.0",
     "gulp": "^3.9.1",
     "lite-server": "^2.2.0",
