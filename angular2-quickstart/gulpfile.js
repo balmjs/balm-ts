@@ -24,4 +24,7 @@ balm.config = {
   }
 };
 
-balm.go();
+balm.go(function(mix) {
+  mix.cssmin('./dist/css/main.css', './dist/css');
+  mix.jsmin('./dist/js/vendor/polyfill.js', './dist/js/vendor');
+});
