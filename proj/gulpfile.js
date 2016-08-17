@@ -15,9 +15,10 @@ balm.config = {
       index: './src/index.tsx'
     },
     vendors: ['common'],
-    loaders: [
-      { test: /\.tsx?$/, loader: 'ts-loader' }
-    ],
+    loaders: [{
+      test: /\.tsx?$/,
+      loader: 'ts-loader'
+    }],
     extensions: ['.ts', '.tsx']
   }
 };

@@ -15,12 +15,17 @@ balm.config = {
       main: './app/main.ts'
     },
     vendors: ['angular'],
-    loaders: [{ test: /\.tsx?$/, loader: 'ts-loader' }],
+    loaders: [{
+      test: /\.tsx?$/,
+      loader: 'ts-loader'
+    }],
     extensions: ['.ts', '.tsx']
   }
 };
 
 balm.go(function(mix) {
-  mix.cssmin('./dist/css/main.css', './dist/css');
-  mix.jsmin('./dist/js/vendor/polyfill.js', './dist/js/vendor');
+  if (balm.config.production) {
+    mix.cssmin('./dist/css/main.css', './dist/css');
+    mix.jsmin('./dist/js/vendor/polyfill.js', './dist/js/vendor');
+  }
 });
