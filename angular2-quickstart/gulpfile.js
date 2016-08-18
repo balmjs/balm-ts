@@ -11,7 +11,11 @@ balm.config = {
   },
   scripts: {
     entry: {
-      angular: ['@angular/core', '@angular/platform-browser-dynamic'],
+      angular: [
+        '@angular/platform-browser-dynamic',
+        '@angular/core',
+        '@angular/platform-browser'
+      ],
       main: './app/main.ts'
     },
     vendors: ['angular'],
