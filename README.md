@@ -54,3 +54,24 @@ balm.config = {
   ...
 };
 ```
+
+## Loading other resources and code splitting
+
+Loading css and other resources is possible but you will need to make sure that you have defined the `require` function in a declaration file.
+
+```js
+// require.d.ts
+declare var require: {
+    <T>(path: string): T;
+    (paths: string[], callback: (...modules: any[]) => void): void;
+    ensure: (paths: string[], callback: (require: <T>(path: string) => T) => void) => void;
+};
+
+// tsconfig.json
+{
+  "compilerOptions": {},
+  "files": [
+    "require.d.ts"
+  ]
+}
+```
