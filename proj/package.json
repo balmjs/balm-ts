@@ -1,23 +1,24 @@
 {
   "name": "balm-ts",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The balm demo for typescript project",
   "main": "index.js",
   "scripts": {
-    "preinstall": "typings install",
     "dev": "gulp",
     "prod": "gulp --production"
   },
   "keywords": [],
   "author": "Elf-mousE",
   "license": "ISC",
-  "devDependencies": {
-    "balm": "^0.4.37",
-    "gulp": "^3.9.1",
-    "ts-loader": "^0.8.2"
-  },
   "dependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "@types/react": "^0.14.41",
+    "@types/react-dom": "^0.14.18",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "balm": "^0.5.1",
+    "gulp": "^3.9.1",
+    "ts-loader": "^0.9.4"
   }
 }

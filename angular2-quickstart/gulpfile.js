@@ -21,7 +21,7 @@ balm.config = {
     vendors: ['angular'],
     loaders: [{
       test: /\.tsx?$/,
-      loader: 'ts-loader'
+      loader: 'ts'
     }],
     extensions: ['.ts', '.tsx']
   }

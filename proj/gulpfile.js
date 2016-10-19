@@ -17,7 +17,7 @@ balm.config = {
     vendors: ['common'],
     loaders: [{
       test: /\.tsx?$/,
-      loader: 'ts-loader'
+      loader: 'ts'
     }],
     extensions: ['.ts', '.tsx']
   }
