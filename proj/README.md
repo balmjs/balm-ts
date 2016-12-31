@@ -1,4 +1,4 @@
-## Balm Demo（TS+React版）
+## Balm Demo（TypeScript+React版）
 
 ```
 # 准备
@@ -9,6 +9,8 @@ npm link typescript
 
 # 安装
 npm install
+# or
+yarn install
 
 # 开发
 npm run dev
@@ -17,4 +19,4 @@ npm run dev
 npm run prod
 ```
 
-__gg__
+__enjoy it__
