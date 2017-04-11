@@ -1,5 +1,5 @@
 {
-  "name": "balm-ts",
+  "name": "balm-demo-ts",
   "version": "2.0.0",
   "description": "The balm demo for typescript project",
   "main": "index.js",
