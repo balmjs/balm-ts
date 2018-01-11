@@ -18,18 +18,19 @@ balm.config = {
       ],
       main: './app/main.ts'
     },
-    vendors: ['angular'],
     loaders: [{
       test: /\.tsx?$/,
       loader: 'ts'
     }],
     extensions: ['.ts', '.tsx']
+  },
+  extras: {
+    excludes: ['*.json', '*.md', '*.lock', '.tmp', 'package.js']
   }
 };
 
 balm.go(function(mix) {
   if (balm.config.production) {
-    mix.cssmin('./dist/css/main.css', './dist/css');
-    mix.jsmin('./dist/js/vendor/polyfill.js', './dist/js/vendor');
+    mix.jsmin('dist/js/vendor/polyfill.js', 'dist/js/vendor', { suffix: '' });
   }
 });
