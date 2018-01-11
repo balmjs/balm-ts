@@ -25,7 +25,7 @@ balm.config = {
     extensions: ['.ts', '.tsx']
   },
   extras: {
-    excludes: ['*.json', '*.md', '*.lock', '.tmp', 'package.js']
+    excludes: ['*.json', '*.md', '*.lock', '.tmp', 'gulpfile.js']
   }
 };
 
