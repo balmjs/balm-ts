@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "@types/node": "^9.3.0",
-    "balm": "^0.15.3",
+    "balm": "^0.22.0",
     "gulp": "^3.9.1",
-    "ts-loader": "^3.2.0",
+    "ts-loader": "^4.3.0",
     "tslint": "^5.9.1",
     "typescript": "~2.6.2"
   }
