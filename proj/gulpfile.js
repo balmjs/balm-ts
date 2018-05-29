@@ -14,11 +14,12 @@ balm.config = {
       common: ['react', 'react-dom'],
       index: './src/index.tsx'
     },
-    vendors: ['common'],
-    loaders: [{
-      test: /\.tsx?$/,
-      loader: 'ts'
-    }],
+    loaders: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader'
+      }
+    ],
     extensions: ['.ts', '.tsx']
   }
 };
