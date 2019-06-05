@@ -17,9 +17,9 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "balm": "^1.0.0",
-    "gulp": "^4.0.0",
-    "ts-loader": "^4.3.0",
-    "typescript": "^2.8.3"
+    "balm": "^1.5.2",
+    "gulp": "^4.0.2",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1"
   }
 }
