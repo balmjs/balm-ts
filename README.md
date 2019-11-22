@@ -1,77 +1,27 @@
-## ES6
+# BalmJS demo - TSX (TypeScript + React)
 
-```js
-// tsconfig.json
-{
-  "compilerOptions": {
-    "target": "es6"
-  }
-}
+## Installing Balm
 
-// gulpfile.js
-var balm = require('balm');
-
-balm.config = {
-  ...
-  scripts: {
-    ...
-    loaders: [
-      // note that babel-loader is configured to run after ts-loader
-      { test: /\.ts(x?)$/, loader: 'babel-loader!ts-loader' }
-    ],
-    extensions: ['.ts', '.tsx'],
-    ...
-  },
-  ...
-};
+```sh
+yarn install
+# OR
+npm install
 ```
 
-## ES5
+## :ghost: Enjoy
 
-```js
-// tsconfig.json
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs"
-  }
-}
+For development
 
-// gulpfile.js
-var balm = require('balm');
-
-balm.config = {
-  ...
-  scripts: {
-    ...
-    loaders: [
-      // note that babel-loader is not required
-      { test: /\.ts(x?)$/, loader: 'ts-loader' }
-    ],
-    extensions: ['.ts', '.tsx'],
-    ...
-  },
-  ...
-};
+```sh
+yarn run dev
+# OR
+npm run dev
 ```
 
-## Loading other resources and code splitting
+For production
 
-Loading css and other resources is possible but you will need to make sure that you have defined the `require` function in a declaration file.
-
-```js
-// require.d.ts
-declare var require: {
-    <T>(path: string): T;
-    (paths: string[], callback: (...modules: any[]) => void): void;
-    ensure: (paths: string[], callback: (require: <T>(path: string) => T) => void) => void;
-};
-
-// tsconfig.json
-{
-  "compilerOptions": {},
-  "files": [
-    "require.d.ts"
-  ]
-}
+```sh
+yarn run prod
+# OR
+npm run prod
 ```
