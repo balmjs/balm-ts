@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/styles/main.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script src="%PUBLIC_URL%/scripts/vendor/lib.js"></script>
+    <section class="todoapp"></section>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			<p>Created by <a href="http://github.com/elf-mouse">N. Elf-mousE</a></p>
+    </footer>
+    <!-- build:js js/vendor.js -->
+    <script src="node_modules/director/build/director.min.js"></script>
+    <!-- endbuild -->
     <script src="%PUBLIC_URL%/scripts/main.js"></script>
   </body>
 </html>
